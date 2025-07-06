@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@SomeStyling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adv_software_project.HelloController">
+    <children>
+        <Pane layoutY="-1.0" prefHeight="463.0" prefWidth="606.0">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8995a1" height="326.0" layoutX="104.0" layoutY="41.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" width="397.0">
+               <effect>
+                  <GaussianBlur radius="23.13" />
+               </effect>
+            </Rectangle>
+                <Pane layoutX="104.0" layoutY="41.0" prefHeight="326.0" prefWidth="397.0" style="-fx-background-radius: 25; -fx-border-color: pink; -fx-border-radius: 25;">
+                    <children>
+                        <Text fill="#e6affc" fontSmoothingType="LCD" layoutX="138.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign-Up">
+                            <font>
+                                <Font name="Monotype Corsiva" size="36.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#e6affc" fontSmoothingType="LCD" layoutX="37.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: ">
+                            <font>
+                                <Font name="Monotype Corsiva" size="24.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="emailField" layoutX="192.0" layoutY="216.0" style="-fx-background-color: e6affc; -fx-font-family: Brush Script MT; -fx-border-radius: 25; -fx-background-radius: 25;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <Text fill="#e6affc" layoutX="24.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                            <font>
+                                <Font name="Monotype Corsiva" size="24.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="NewPasswordField" accessibleRole="PASSWORD_FIELD" layoutX="192.0" layoutY="269.0" style="-fx-background-color: e6affc; -fx-font-family: Brush Script MT; -fx-border-radius: 25; -fx-background-radius: 25;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <Text fill="#e6affc" layoutX="24.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: ">
+                            <font>
+                                <Font name="Monotype Corsiva" size="24.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#e6affc" layoutX="24.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:">
+                            <font>
+                                <Font name="Monotype Corsiva" size="24.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#e6affc" layoutX="32.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+                            <font>
+                                <Font name="Monotype Corsiva" size="24.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="addressField" layoutX="192.0" layoutY="167.0" style="-fx-background-color: e6affc; -fx-font-family: Brush Script MT; -fx-border-radius: 25; -fx-background-radius: 25;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="phoneNumberField" layoutX="192.0" layoutY="117.0" style="-fx-background-color: e6affc; -fx-font-family: Brush Script MT; -fx-border-radius: 25; -fx-background-radius: 25;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="Name" layoutX="192.0" layoutY="63.0" style="-fx-background-color: e6affc; -fx-font-family: Brush Script MT; -fx-border-radius: 25; -fx-background-radius: 25;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                  <Label fx:id="ErrorName" alignment="CENTER" layoutX="199.0" layoutY="95.0" prefHeight="17.0" prefWidth="163.0" text="Please enter this field!" textFill="#d03b3b" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ErrorPhone" alignment="CENTER" layoutX="199.0" layoutY="148.0" prefHeight="17.0" prefWidth="163.0" text="Please enter this field!" textFill="#d03b3b" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Erroraddress" alignment="CENTER" layoutX="199.0" layoutY="199.0" prefHeight="17.0" prefWidth="163.0" text="Please enter this field!" textFill="#d03b3b" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ErrorEmail" alignment="CENTER" layoutX="203.0" layoutY="248.0" prefHeight="17.0" prefWidth="163.0" text="Please enter this field!" textFill="#d03b3b" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ErrorPass" alignment="CENTER" layoutX="207.0" layoutY="302.0" prefHeight="17.0" prefWidth="163.0" text="Please enter this field!" textFill="#d03b3b" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </Pane>
+                <Button layoutX="404.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#handlesignup" style="-fx-background-color: #e6affc; -fx-background-radius: 25;" text="Sign up" textFill="WHITE">
+                    <font>
+                        <Font name="Monotype Corsiva" size="24.0" />
+                    </font>
+                </Button>
+            <Button layoutX="88.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#switchToLogin" style="-fx-background-color: none;" text="Already have an account? Login here" textFill="#efecec" underline="true">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

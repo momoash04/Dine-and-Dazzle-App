@@ -1,0 +1,26 @@
+.root{
+    -fx-background-image: url('./images/background-image2.png')
+    -fx-background-size cover;
+    -fx-background-position: center;
+
+}
+
+.scroll-pane{
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+    -fx-border-color: none;
+}
+.button-bar {
+    -fx-alignment: left; /* Center contents */
+}
+
+.pane{
+    -fx-background-radius: 100;
+    -fx-background-color: #333;
+}
+
+.scroll-pane2{
+    
+    -fx-background-color: #5189ce !important;
+    -fx-border-color: none;
+}
